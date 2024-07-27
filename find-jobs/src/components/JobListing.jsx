@@ -1,7 +1,12 @@
-// import React from "react";
+import {useState} from "react";
 import Proptypes from "prop-types";
 
 const JobListing = ({job}) => {
+  const [showFullDescription,setShowFullDescription] = useState(false);
+  let description = job.description;
+  if(!showFullDescription){
+    description= description.substring(0,90)+"....";
+  }
   return (
     <>
       <div className="bg-white rounded-xl shadow-md relative">
@@ -11,7 +16,9 @@ const JobListing = ({job}) => {
             <h3 className="text-xl font-bold">{job.title}</h3>
           </div>
 
-          <div className="mb-5">{job.description}</div>
+          <div className="mb-5">{description}
+          <button className="block px-2 py-1 mt-1 rounded-md text-white bg-indigo-500 border border-indigo-500" onClick={()=>setShowFullDescription((prevState)=>!prevState)} >{showFullDescription?"Less":"More"}</button>
+          </div>
 
           <h3 className="text-indigo-500 mb-2">{job.salary}/ Year</h3>
 
