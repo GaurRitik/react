@@ -1,4 +1,5 @@
 // import React from "react";
+// import{Route}
 import Hero from "./components/Hero.jsx";
 import NavBar from "./components/NavBar.jsx";
 import HomeCards from "./components/HomeCards.jsx";
@@ -7,11 +8,12 @@ import ViewAllJobs from "./components/ViewAllJobs.jsx";
 const App = () => {
   return (
     <>
-      <NavBar />
+
+      {/* <NavBar />
       <Hero />
       <HomeCards />
       <JobListings/>
-      <ViewAllJobs/> 
+      <ViewAllJobs/>  */}
     </>
   );
 };
