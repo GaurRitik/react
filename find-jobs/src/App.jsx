@@ -2,8 +2,7 @@
 import{Route,
   createBrowserRouter,
   createRoutesFromElements,
-  RouterProvider,
-  Router
+  RouterProvider
 } from 'react-router-dom';
 
 import MainLayout from './layouts/MainLayout'

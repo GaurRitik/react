@@ -1,4 +1,3 @@
-import React from "react";
 import PropTypes from 'prop-types';
 
 const Hero = ({title="Become a developer", subtitle="Find jobs that fits you the best"}) => {
