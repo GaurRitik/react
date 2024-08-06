@@ -10,8 +10,8 @@ const JobListings = ({ isHome = false }) => {
 
   //to fetch data according to pages
   const apiURL = isHome
-    ? "http://localhost:5000/jobs?_limit=3"
-    : "http://localhost:5000/jobs";
+    ? "/api/jobs?_limit=3"
+    : "/api/jobs";
 
   useEffect(() => {
     //get jobs from server
