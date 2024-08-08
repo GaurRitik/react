@@ -40,7 +40,7 @@ const NavBar = () => {
                     Jobs
                   </NavLink>
                   <NavLink
-                    to="/addjob"
+                    to="/add-job"
                     className={showActiveLink}
                   >
                     Add Job
